@@ -33,9 +33,9 @@ Este entorno es para instituciones. Para usuarios poco avanzados.
 _Clona el repositorio con el comando:_
 
 ```sh
-git clone https://github.com/CristianAgudelo63/Cloud.git
-cd Cloud/client
-npm run start
+$ git clone https://github.com/CristianAgudelo63/Cloud.git
+$ cd Cloud/client
+$ npm run start
 ```
 
 ### Novedades <a name="Novedades"></a>
@@ -49,7 +49,7 @@ Primera versión de la plataforma estable, se incluye en la plataforma un client
 Para facilitar el proceso de instalación de la plataforma, ejecuta el siguiente comando utilizando Docker.
 
 ```sh
-docker buil
+$ docker buil
 ```
 
 ## Entorno de Desarrollo <a name="EntornoDeDesarrollo"></a>
@@ -65,7 +65,7 @@ Para que funcione la aplicación es necesario instalar algunas dependencias para
 Descargar Git para Windows desde página principal: [git.com/downloads](https://git-scm.com/downloads) (_para Linux y MacOS no es necesario instalar Git_). Una vez finalizado la instalación, abre Git Bash o en su defecto abre la terminal y ejecuta el comando:
 
 ```sh
-git --version
+$ git --version
 ```
 
 #### Node JS <a name="NodeJS"></a>
@@ -73,30 +73,34 @@ git --version
 Descargar Node JS igual o posterior a la `versión 14.17.0` desde su página principal [nodejs.org](https://nodejs.org/en/download/), junto con npm igual o posterior a la `versión 6.14.13`. Una vez finalizado la instalación ejecuta los siguientes comandos:
 
 ```sh
-node --version
-nmp --version
+$ node --version
+$ npm --version
 ```
 
 #### React JS <a name="ReactJS"></a>
 
-Descargar React JS con la herramienta Create React App con los siguientes comandos:
+Descargar React JS con la herramienta Create React App y algunas dependencias con los siguientes comandos:
 
 _La descarga puede tardar unos minutos_
 
 ```sh
-npx create-react-app fesacloud/client
-cd fesacloud/client   #Ingresar a la carpeta
-npm start   #Ejecutar una vez descargado todo ReactJS
+$ npx create-react-app fesacloud/client
+$ cd fesacloud/client   #Ingresar a la carpeta
+$ npx i react-router-dom
+$ npm i formik --save
+$ npm i --save @fortawesome/fontawesome-svg-core
+$ npm i --save @fortawesome/free-solid-svg-icons
+$ npm i --save @fortawesome/react-fontawesome
+$ npm start   #Ejecutar una vez descargado todo ReactJS
 ```
 
 ### Docker Entorno de Desarrollo <a name="DockerEntornoDeDesarrollo"></a>
 
-Descargar Docker desde su página principal [docker.com](https://www.docker.com/get-started) para empaquetar la aplicación y sus dependencias. Si conocer de docker, puedes decargar una imágen de NodeJS, MySQL y Ubuntu.
+Descargar Docker desde su página principal [docker.com](https://www.docker.com/get-started) para empaquetar la aplicación y sus dependencias. Si conocer de docker, puedes decargar una imágen de NodeJS y Ubuntu.
 
 ```sh
-docker pull node:14.17-alpine
-docker pull mysql
-docker pull ubuntu
+$ docker pull node:14.17-alpine
+$ docker pull ubuntu
 ```
 
 ### Desarrollado por:

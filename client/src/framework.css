@@ -44,6 +44,15 @@
 :root {
 	/* Fondos */
 	--fondoPrimario: linear-gradient(180deg, #0099ff, #12385f);
+	--fondoPrimarioPersonalizadoA: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	--fondoPrimarioPersonalizadoB: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+	--fondoPrimarioPersonalizadoC: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(9, 9, 112, 1) 0%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	--fondoPrimarioPersonalizadoD: rgb(21, 32, 43);
 	--fondoSegundario: rgba(255, 255, 255, 0.6);
 
 	/* Textos */
@@ -68,7 +77,7 @@
 
 	/* Inputs */
 	--fuenteInput: 'Lato';
-	--bordeInput: 2px solid #cecece;
+	--bordeInput: 2px solid #0099ff;
 	--altoInput: 40px;
 }
 
@@ -94,6 +103,13 @@
 html {
 	font-family: var(--fuenteTexto);
 	font-size: var(--tamañoFuenteTexto);
+}
+
+body {
+	overflow: hidden;
+	background: var(--fondoPrimario);
+	height: 100vh;
+	margin: 0;
 }
 
 /* Textos */
@@ -124,18 +140,21 @@ html {
 	margin: 0 auto;
 	padding: 0px 10px 0px 10px;
 	margin: 5px 0px 5px 0px;
+	text-decoration: none;
 }
 
 .btnPrimario {
 	background: var(--fondoBoton);
 	color: var(--colorTextoBoton);
 	border: none;
+	margin: 10px auto;
 }
 
 .btnSegundario {
 	background: var(--fondoBotonSegundario);
 	color: var(--fondoBoton);
 	border: var(--bordeBoton);
+	margin: 10px auto;
 }
 
 /* Inputs */
@@ -145,4 +164,17 @@ html {
 	font-size: var(--tamañoFuenteTexto);
 	border: var(--bordeInput);
 	height: var(--altoInput);
+	outline: none;
+}
+
+.label {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	font-family: var(--fuenteTexto);
+	font-size: 20px;
+	color: #202124;
+	margin-bottom: 5px;
 }
