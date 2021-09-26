@@ -1,42 +1,42 @@
-/* Fuentes */
+/* Fuentes en caso de no cargar Google Fonst*/
 
 @font-face {
 	font-family: 'Roboto';
-	src: url(./fuentes/Roboto/Roboto-Regular.ttf) format('truetype');
+	src: url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'RobotoBold';
-	src: url(./fuentes/Roboto/Roboto-Bold.ttf) format('truetype');
+	src: url(./fonts/Roboto/Roboto-Bold.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'RobotoItalic';
-	src: url(./fuentes/Roboto/Roboto-Italic.ttf) format('truetype');
+	src: url(./fonts/Roboto/Roboto-Italic.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: 'OpenSans';
-	src: url(./fuentes/OpenSans/OpenSans-Regular.ttf) format('truetype');
+	src: url(./fonts/OpenSans/OpenSans-Regular.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'OpenSansBold';
-	src: url(./fuentes/OpenSans/OpenSans-Bold.ttf) format('truetype');
+	src: url(./fonts/OpenSans/OpenSans-Bold.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'OpenSansItalic';
-	src: url(./fuentes/OpenSans/OpenSans-Italic.ttf) format('truetype');
+	src: url(./fonts/OpenSans/OpenSans-Italic.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: 'Lato';
-	src: url(./fuentes/Lato/Lato-Regular.ttf) format('truetype');
+	src: url(./fonts/Lato/Lato-Regular.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'LatoBold';
-	src: url(./fuentes/Lato/Lato-Bold.ttf) format('truetype');
+	src: url(./fonts/Lato/Lato-Bold.ttf) format('truetype');
 }
 @font-face {
 	font-family: 'LatoItalic';
-	src: url(./fuentes/Lato/Lato-Italic.ttf) format('truetype');
+	src: url(./fonts/Lato/Lato-Italic.ttf) format('truetype');
 }
 
 /* Variables CSS */

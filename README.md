@@ -24,7 +24,7 @@ Es un servicio nube de código abierto, en el cual se puede almacenar archivos. 
 
 ### Técnología Utilizadas <a name="Tecnologia"></a>
 
-Las Tecnologías utiliza en FESACLOUD, son las tecnologías del desarrollo web moderno con HTML5, CSS3, JavaScript, React JS, Sass y JSX; gestión de paquetes con npm y apt; conexiones del lado del servidor con Node JS, Express, MySQL y Linux; gestores de controles de versiones con Git y GitHub; finalmente un contenedor con Docker de toda la aplicación.
+Las Tecnologías utiliza en FESACLOUD, son las tecnologías del desarrollo web moderno con HTML5, CSS3, JavaScript ES6 (ECMAScript 6), React JS, FireBase; gestión de paquetes con npm; gestores de controles de versiones con Git y GitHub; finalmente un contenedor con Docker de toda la aplicación.
 
 ## Entorno de Producción <a name="EntornoDeProduccion"></a>
 
@@ -34,7 +34,7 @@ _Clona el repositorio con el comando:_
 
 ```sh
 $ git clone https://github.com/CristianAgudelo63/Cloud.git
-$ cd Cloud/client
+$ cd Cloud/app
 $ npm run start
 ```
 
@@ -84,9 +84,11 @@ Descargar React JS con la herramienta Create React App y algunas dependencias co
 _La descarga puede tardar unos minutos_
 
 ```sh
-$ npx create-react-app fesacloud/client
-$ cd fesacloud/client   #Ingresar a la carpeta
-$ npx i react-router-dom
+$ npx create-react-app fesacloud/app
+$ cd fesacloud/app   #Ingresar a la carpeta
+$ npm i react-router-dom
+$ npm i firebase
+$ npm i sass
 $ npm i formik --save
 $ npm i --save @fortawesome/fontawesome-svg-core
 $ npm i --save @fortawesome/free-solid-svg-icons
