@@ -14,7 +14,7 @@ const CrearCuenta = () => {
 				<main>
 					<div className="contenedorTitulo">
 						<div>
-							<h1 className="titulo">Crea a tu cuenta Cloud</h1>
+							<h1 className="titulo">Crea tu cuenta Cloud</h1>
 						</div>
 					</div>
 					<FormularioDeRegistro />

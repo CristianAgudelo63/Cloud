@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faUserCircle } from '@fortawesome/free-solid-svg-icons';
-import logo from './../../img/png/logo.png';
+import logo from './../../../img/png/logo.png';
 
 const Header = () => {
 	return (
@@ -11,9 +11,11 @@ const Header = () => {
 			</div>
 			<div className="headerPrincipal">
 				<div className="busqueda">
-					<FontAwesomeIcon icon={faSearch} className="i-busqueda" />
+					<div className="contenedorIcono">
+						<FontAwesomeIcon icon={faSearch} className="iconoBusqueda" />
+					</div>
 					<input
-						className="input barra-busqueda"
+						className="input barraBusqueda"
 						type="text"
 						placeholder="Buscar archivo o carpeta"
 					></input>

@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Ingresar from './components/ingresar';
 import CrearCuenta from './components/crearCuenta';
 import Principal from './components/principal';
+import './framework.css';
 
 const App = () => {
 	return (

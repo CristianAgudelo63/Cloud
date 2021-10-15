@@ -1,0 +1,165 @@
+.header
+  width: 100%
+  height: 100px
+  align-items: center
+  justify-content: center
+  display: grid
+  grid-template-columns: 18% 72% 10%
+  grid-template-rows: auto
+  grid-template-areas: "headerLogo headerPrincipal perfil"
+  justify-items: center
+  align-content: center
+  .headerLogo
+    max-width: 250px
+    height: 100%
+    margin: 0 auto
+    .logo
+      width: 125px
+  .headerPrincipal
+    .barraBusqueda
+      width: 400px
+      border-radius: 25px
+      background: rgba(255, 255, 255, .7)
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16)
+      border: none
+      outline: none
+      text-indent: 60px
+    .barraBusqueda:hover
+      background: #fff
+    .barraBusqueda:focus
+      background: #fff
+    .contenedorIcono
+      width: 60px
+      height: 40px
+      position: absolute
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-items: center
+      .iconoBusqueda
+        color: rgba(0, 0, 0, .8)
+        font-size: 25px
+        margin-left: 20px 
+  .perfil
+    .i-usuario
+      font-size: 50px
+      color: #fff
+
+.contenido
+  display: grid 
+  grid-template-columns: 18% 82%
+  grid-template-rows: auto
+  grid-template-areas: "header header" "aside main"
+  .aside
+    height: 100vh
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .usuario
+      padding: 20px 0
+      width: 200px
+      height: 10%
+      font-family: var(--fuenteTexto)
+      color: #fff
+    .menu
+      height: 50%
+      .seleccionado
+        width: 200px
+        height: 50px
+        border-radius: 5px 15px 50px 5px
+        background: #fff
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, .16)
+        margin: 20px 0px
+        cursor: pointer
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        .textoItemMenu
+          font-family: var(--fuenteBoton)
+        .contenedorIcono
+          width: 50px
+          height: 50px
+          display: flex
+          flex-wrap: wrap
+          justify-content: center
+          align-items: center
+          .iconoMenu
+            width: 20px
+            height: 30px
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+
+      .itemMenu
+        width: 175px
+        height: 50px
+        border-radius: 5px 25px 25px 5px
+        background: rgba(255, 255, 255, .7)
+        margin-bottom: 20px
+        cursor: pointer
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        .textoItemMenu
+          font-family: var(--fuenteBoton)
+          font-size: var(--tamañoFuenteBoton)
+          color: rgba(0, 0, 0, .7)
+        .contenedorIcono
+          width: 50px
+          height: 50px
+          display: flex
+          flex-wrap: wrap
+          justify-content: center
+          align-items: center
+          .iconoMenu
+            width: 20px
+            height: 30px
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            color: rgba(0, 0, 0, .7)
+
+    .estado
+      height: 40%
+      .progresorTexto
+        font-family: var(--fuenteTexto)
+        font-size: 10px
+      .progresoGrafico
+        .barra
+          height: 15px
+
+  .main
+    background: var(--fondoSegundario)
+    border-radius: 10px 0px 0px 0px
+    height: 100vh
+    .submenu
+      border-radius: 5px
+      background: #fff
+      margin: 20px
+      .items
+        .btnItems
+          background: var(--fondoSegundario)
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, .16)
+          border: none
+          display: inline-block
+          margin-left: 5px
+          margin-right: 5px
+          width: auto
+          .icono
+            background: var(--fondoPrimario)
+            border-radius: 50px
+            display: inline-block
+            margin-left: -10px
+            margin-right: 5px
+            padding: 10px
+            .iconoSubmenu
+              color: #fff
+              font-size: 20px
+    .contenido
+      border-radius: 5px
+      background: #fff
+      margin: 20px
+      height: 65vh
+      padding: 20px

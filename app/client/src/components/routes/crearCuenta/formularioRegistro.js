@@ -34,7 +34,7 @@ const FormularioDeRegistro = () => {
 		>
 			{({ errors }) => (
 				<div className="contenedorFormulario">
-					<Form>
+					<Form method="POST">
 						{console.log(errors)}
 						<div className="contenedorInputs">
 							<label htmlFor="usuario" className="label">
