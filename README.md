@@ -93,7 +93,7 @@ $ npm i --save @fortawesome/free-solid-svg-icons
 $ npm i --save @fortawesome/react-fontawesome
 $ npm start   #Ejecutar una vez descargado todo ReactJS
 ```
-Leer la <a href="client/README.md">documentación del Cliente</a> para más información.
+Leer la <a href="app/client/README.md">documentación del Cliente</a> para más información.
 
 ### Servidor <a name="Servidor"></a>
 Back-End de la plataforma, se utilizará las siguientes tecnologías:
