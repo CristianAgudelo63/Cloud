@@ -40,7 +40,7 @@ $ npm run start
 
 ![](https://img.shields.io/badge/versi%C3%B3n-1.0-orange)
 
-Primera versión de la plataforma estable, se incluye en la plataforma un cliente, un servidor y bases de datos.
+Primera VERSIÓN ALPHA de la plataforma, incluye en la plataforma un cliente en ReactJS, un servidor con Node y Express y bases de datos en Firebase. La versión aún está en desarrollo.
 
 ### Docker Entorno de Producción <a name="DockerEntornoDeProduccion"></a>
 
