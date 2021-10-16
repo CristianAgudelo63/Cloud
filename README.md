@@ -33,7 +33,6 @@ _Clona el repositorio con el comando:_
 ```sh
 $ git clone https://github.com/CristianAgudelo63/Cloud.git
 $ cd Cloud/app
-$ npm run start
 ```
 
 ### Novedades <a name="Novedades"></a>
@@ -47,7 +46,7 @@ Primera VERSIÓN ALPHA de la plataforma, incluye en la plataforma un cliente en 
 Para facilitar el proceso de instalación de la plataforma, ejecuta el siguiente comando utilizando Docker.
 
 ```sh
-$ docker buil
+$ docker pull cristiangudelo63/cloud
 ```
 
 ## Entorno de Desarrollo <a name="EntornoDeDesarrollo"></a>
