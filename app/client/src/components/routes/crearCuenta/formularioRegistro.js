@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import db from './../../../firebase/firebaseConfig';
 
@@ -33,10 +34,10 @@ const FormularioDeRegistro = () => {
 			}}
 		>
 			{({ errors }) => (
-				<div className="contenedorFormulario">
+				<Contenedor>
 					<Form method="POST">
 						{console.log(errors)}
-						<div className="contenedorInputs">
+						<Contenedor>
 							<label htmlFor="usuario" className="label">
 								Usuario
 							</label>
@@ -50,7 +51,7 @@ const FormularioDeRegistro = () => {
 							/>
 							<ErrorMessage
 								name="usuario"
-								component={() => <div className="error">{errors.usuario}</div>}
+								component={() => <ErrorTipado>{errors.usuario}</ErrorTipado>}
 							/>
 							<label htmlFor="contraseña" className="label">
 								Contraseña
@@ -74,15 +75,34 @@ const FormularioDeRegistro = () => {
 								name="repetirContraseña"
 								required=""
 							/>
-						</div>
+						</Contenedor>
 						<button type="submit" className="btn btnPrimario">
 							Crear Cuenta
 						</button>
 					</Form>
-				</div>
+				</Contenedor>
 			)}
 		</Formik>
 	);
 };
 
 export default FormularioDeRegistro;
+
+const ErrorTipado = styled.div`
+	color: #e92b2d;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0 auto;
+  width: 60%;
+  font-family: var(--fuenteTexto);
+`;
+
+const Contenedor = styled.div`
+	.input{
+		margin: 0 auto;
+		max-width: 60%;
+		display: block;
+		width: 60%;
+		text-indent: 20px;
+	}
+`;

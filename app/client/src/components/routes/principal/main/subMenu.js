@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faCloudDownloadAlt,
@@ -8,12 +9,12 @@ import {
 	faTrash,
 } from '@fortawesome/free-solid-svg-icons';
 import Ventana from './ventanaModal';
-import SubirArchivos from './subirArchivos'
-import Eliminar from './eliminar'
-import Descargar from './descargar'
-import CrearCarpeta from './crearCarpeta';
-import Compartir from './compartir'
-
+import SubirArchivos from './subMenu/subirArchivos'
+import Eliminar from './subMenu/eliminar'
+import Descargar from './subMenu/descargar'
+import CrearCarpeta from './subMenu/crearCarpeta';
+import Compartir from './subMenu/compartir'
+	
 const Submenu = () => {
 
 	const [estadoModal1, cambiarEstadoModal1] = useState(false);
@@ -24,40 +25,46 @@ const Submenu = () => {
 
   return(
 		<>
-			<div className="submenu">
+			<Contenedor>
 					<div className="items">
-						<button className="btn btnItems" onClick={() => cambiarEstadoModal1(!estadoModal1)}>
-							<div className="icono">
-								<FontAwesomeIcon icon={faPlus} className="iconoSubmenu"/>
-							</div>
+						<Boton className="btn" onClick={() => cambiarEstadoModal1(!estadoModal1)}>
+							<Icono>
+								<FontAwesomeIcon icon={faPlus} className="i"/>
+							</Icono>
 							Subir
-						</button>
-						<button className="btn btnItems" onClick={() => cambiarEstadoModal2(!estadoModal2)}>
-							<div className="icono">
-								<FontAwesomeIcon icon={faFolderPlus} className="iconoSubmenu" />
-							</div>
+						</Boton>
+
+						<Boton className="btn" onClick={() => cambiarEstadoModal2(!estadoModal2)}>
+							<Icono>
+								<FontAwesomeIcon icon={faFolderPlus} className="i" />
+							</Icono>
 							Crear Carpeta
-						</button>
-						<button className="btn btnItems" onClick={() => cambiarEstadoModal3(!estadoModal3)}>
-							<div className="icono">
-								<FontAwesomeIcon icon={faTrash} className="iconoSubmenu" />
-							</div>
+						</Boton>
+
+						<Boton className="btn" onClick={() => cambiarEstadoModal3(!estadoModal3)}>
+							<Icono>
+								<FontAwesomeIcon icon={faTrash} className="i" />
+							</Icono>
 							Eliminar
-						</button>
-						<button className="btn btnItems" onClick={() => cambiarEstadoModal4(!estadoModal4)}>
-							<div className="icono">
-								<FontAwesomeIcon icon={faCloudDownloadAlt} className="iconoSubmenu" />
-							</div>
+						</Boton>
+
+						<Boton className="btn" onClick={() => cambiarEstadoModal4(!estadoModal4)}>
+							<Icono>
+								<FontAwesomeIcon icon={faCloudDownloadAlt} className="i" />
+							</Icono>
 							Descargar
-						</button>
-						<button className="btn btnItems" onClick={() => cambiarEstadoModal5(!estadoModal5)}>
-							<div className="icono">
-								<FontAwesomeIcon icon={faShareAlt} className="iconoSubmenu" />
-							</div>
+						</Boton>
+
+						<Boton className="btn" onClick={() => cambiarEstadoModal5(!estadoModal5)}>
+							<Icono>
+								<FontAwesomeIcon icon={faShareAlt} className="i" />
+							</Icono>
 							Compartir
-						</button>
+						</Boton>
+
 					</div>
-			</div>
+			</Contenedor>
+			<>
 			<Ventana
 				estado={estadoModal1}
 				cambiarEstado={cambiarEstadoModal1}
@@ -97,8 +104,38 @@ const Submenu = () => {
 			>
 				<Compartir />
 			</Ventana>
+			</>
 		</>
   );
 }
 
 export default Submenu;
+
+const Contenedor = styled.div`
+	border-radius: 5px;
+	background: #fff;
+	margin: 20px;
+`;
+
+const Icono = styled.div`
+	background: var(--fondoPrimario);
+	border-radius: 50px;
+	display: inline-block;
+	margin-left: -10px;
+	margin-right: 5px;
+	padding: 10px;
+	.i{
+		color: #fff;
+		font-size: 20px;
+	}
+`;
+
+const Boton = styled.button`
+	background: var(--fondoSegundario);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, .16);
+	border: none;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: auto;
+`;

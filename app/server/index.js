@@ -2,8 +2,8 @@ const Express = require('express')
 const App = Express()
 const Port = 8080
 
-App.get('/', (req, res) => {
-  res.send('Hello World!')
+App.get('/api', (req, res) => {
+  res.send("Hola");
 })
 
 App.listen(Port, () => {

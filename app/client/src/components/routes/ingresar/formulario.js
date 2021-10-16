@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Formik, Form, Field } from 'formik';
 
 const Formulario = () => {
@@ -15,7 +16,7 @@ const Formulario = () => {
 			{({ errors }) => (
 				<Form>
 					{console.log(errors)}
-					<div className="contenedorInputs">
+					<Contenedor>
 						<label htmlFor="usuario" className="label">
 							Usuario
 						</label>
@@ -38,7 +39,7 @@ const Formulario = () => {
 							name="contraseña"
 							required=""
 						/>
-					</div>
+					</Contenedor>
 
 					<button type="submit" className="btn btnPrimario">
 						Ingresar
@@ -53,3 +54,17 @@ const Formulario = () => {
 };
 
 export default Formulario;
+
+const Contenedor = styled.div`
+	.input{
+		border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    text-indent: 20px ;
+	}
+`;

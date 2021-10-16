@@ -107,7 +107,7 @@ $ cd server
 $ npm init --yes
 $ npm i express
 ```
-Leer la <a href="server/README.md">documentación del Servidor</a> para más información.
+Leer la <a href="app/server/README.md">documentación del Servidor</a> para más información.
 
 ### Docker Entorno de Desarrollo <a name="DockerEntornoDeDesarrollo"></a>
 

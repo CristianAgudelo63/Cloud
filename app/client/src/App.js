@@ -7,13 +7,13 @@ import './framework.css';
 
 const App = () => {
 	return (
-		<div>
+		<>
 			<BrowserRouter>
 				<Route path="/" component={Ingresar} exact={true} />
 				<Route path="/crear" component={CrearCuenta} />
 				<Route path="/principal" component={Principal} />
 			</BrowserRouter>
-		</div>
+		</>
 	);
 };
 
