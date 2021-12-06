@@ -1,0 +1,43 @@
+.descarga {
+	background: #f2f2f2;
+}
+
+.btn-descargar {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 16px;
+	width: 30%;
+	height: 40px;
+	color: #3686e6;
+	background: transparent;
+	border: 1px solid #3686e6;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.btn-descargar:hover {
+	color: #fff;
+	background: #3686e6;
+	border: none;
+}
+
+.codigo {
+	color: #202124;
+	padding: 3px;
+	display: inline-block;
+	border-radius: 5px;
+	font-weight: 400;
+	margin-left: 5px;
+	font-family: 'Lato';
+}
+
+.codigo:hover {
+	background: #202124;
+	color: #fff;
+}

@@ -1,0 +1,64 @@
+.iconos {
+	margin: 5px;
+	padding: 20px;
+	border-bottom: 2px solid #00000099;
+	background: #f2f2f2;
+	display: inline-block;
+	border-radius: 5px;
+	width: 100px;
+	text-align: center;
+	font-size: 25px;
+}
+
+.iconos:hover {
+	border-bottom: 2px solid #000;
+	color: #fff;
+}
+
+.html:hover {
+	background: #e34f26;
+}
+
+.css:hover {
+	background: #1e90ff;
+}
+
+.js:hover {
+	background: #f7df1e;
+}
+
+.react:hover {
+	background: #00d8ff;
+}
+
+.sass:hover {
+	background: #bf4080;
+}
+
+.node:hover {
+	background: #333333;
+}
+
+.mysql:hover {
+	background: #f29111;
+}
+
+.git:hover {
+	background: #f44d27;
+}
+
+.ubuntu:hover {
+	background: #dd4814;
+}
+
+.docker:hover {
+	background: #0db7ed;
+}
+
+.github:hover {
+	background: #333;
+}
+
+.npm:hover {
+	background: #cb3837;
+}

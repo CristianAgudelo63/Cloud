@@ -1,0 +1,28 @@
+header {
+	height: 200px;
+}
+
+header img {
+	width: 200px;
+}
+
+.cuerpo {
+	background: linear-gradient(180deg, #0099ff, #12385f);
+	height: 100%;
+	padding-bottom: 20px;
+}
+
+main {
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 10px;
+}
+
+ul {
+	padding-left: 40px;
+}
+
+li {
+	list-style: upper-roman;
+	margin-bottom: 10px;
+}

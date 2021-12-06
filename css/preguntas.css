@@ -1,0 +1,35 @@
+.preguntas {
+	background: #f2f2f2;
+}
+
+.caja {
+	background: #fff;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	cursor: default;
+	box-shadow: 0px 0px 30px rgba(221, 221, 221, 0.3);
+}
+
+.caja:hover {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.caja h3 {
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+	margin-top: 0;
+}
+
+.caja hr {
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 40%;
+}
+
+.caja p {
+	color: #333;
+}
