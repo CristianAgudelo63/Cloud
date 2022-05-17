@@ -15,7 +15,7 @@ const SignUp = () => {
           <h1>Crea tu cuenta Cloud</h1>
         </Contenedor>
         <FormularioDeRegistro />
-        <Link to='/home' className='btn btnPrimario'>
+        <Link to='/Cloud-Client/home' className='btn btnPrimario'>
           Crear Cuenta
         </Link>
       </Main>

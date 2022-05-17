@@ -16,10 +16,10 @@ function SignIn() {
           <h1>Ingresa a tu cuenta Cloud</h1>
         </Contenedor>
         <Formulario />
-        <Link to='/home' className='btn btnPrimario'>
+        <Link to='/Cloud-Client/home' className='btn btnPrimario'>
           Ingresar
         </Link>
-        <Link to='/signUp' className='btn btnSegundario'>
+        <Link to='/Cloud-Client/signUp' className='btn btnSegundario'>
           Crear Cuenta
         </Link>
       </Main>

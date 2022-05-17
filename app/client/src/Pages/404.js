@@ -11,7 +11,7 @@ const NotFound = () => {
       <Contenedor className='animate__animated animate__flipInY'>
         <FontAwesomeIcon icon={faFaceFrown} className='icono' />
         <h1>Error 404</h1>
-        <Link to='/' className='btn btnPrimario'>
+        <Link to='/Cloud-Client/' className='btn btnPrimario'>
           Volver
         </Link>
       </Contenedor>
