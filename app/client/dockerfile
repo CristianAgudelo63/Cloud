@@ -1,7 +1,0 @@
-FROM node:14.17-alpine AS buil
-WORKDIR /client
-COPY . /client/package.json
-RUN npm install
-COPY . .
-EXPOSE 5000
-RUN npm run buil

@@ -1,0 +1,36 @@
+.fin {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo img {
+	width: 100px;
+}
+
+.frase {
+	text-align: center;
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+.enlaces li {
+	list-style: none;
+	display: inline-block;
+}
+
+.enlaces li a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+	font-family: 'Roboto';
+	font-weight: 300;
+	margin: 0 10px;
+	padding-bottom: 9px;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+
+.enlaces li a:hover {
+	border-bottom: 2px solid #fff;
+}

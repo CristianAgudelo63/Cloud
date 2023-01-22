@@ -1,0 +1,62 @@
+.planes {
+	background: #0099ff;
+	color: #fff;
+}
+
+.planes .contenedor hr {
+	width: 20%;
+	border: 1px solid #fff;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.planes .contenedor .tarjetas {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.planes .contenedor .tarjetas .carta {
+	padding: 20px;
+	border-radius: 15px;
+	color: #000;
+	background: #fff;
+}
+
+.planes .contenedor .tarjetas .carta hr {
+	width: 20%;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.planes .contenedor .tarjetas .carta p {
+	text-align: center;
+}
+
+.planes .contenedor .tarjetas .carta li {
+	list-style: none;
+}
+
+.info {
+	margin-top: 20px;
+}
+
+.precios {
+	display: block;
+	border: 1px solid #0099ff;
+	border-radius: 5px;
+	padding: 5px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.check {
+	margin-right: 10px;
+	color: #16c416;
+}
+
+.close {
+	margin-right: 15px;
+	color: #ce1818;
+}

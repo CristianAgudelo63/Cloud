@@ -1,0 +1,52 @@
+header .logo {
+	display: inline-block;
+}
+
+header .logo img {
+	width: 120px;
+}
+
+header .menu {
+	display: inline-block;
+	float: right;
+	padding-top: 30px;
+}
+
+header .menu li {
+	list-style: none;
+	display: inline-block;
+}
+
+header .menu li a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Roboto';
+	font-weight: 400;
+	margin: 0 10px;
+	padding-bottom: 9px;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+
+header .menu li a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+.descripcion {
+	background: #ffffffcc;
+	padding: 20px;
+	border-radius: 10px;
+	height: 360px;
+	box-shadow: 0px 0px 30px rgba(51, 51, 51, 0.3);
+}
+
+.descripcion hr {
+	width: 20%;
+	border: 1px solid #333;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.arrow {
+	margin-right: 5px;
+}
