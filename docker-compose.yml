@@ -1,8 +1,8 @@
 version: '3.9'
 
 services:
-  # web:
-  #   images: ubuntu
+  web:
+    images: ubuntu
   fesacloudserver:
     container_name: fesacloudserver
     build: ./server
